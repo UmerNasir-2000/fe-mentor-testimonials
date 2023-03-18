@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200;300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #edf2f8;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  line-height: 1.4;
+  font-size: 13px;
+}
+
+#testimonial {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1440px;
+  margin: 100px auto;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.card__header img {
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.card__lead {
+  font-size: 1.5rem;
+}
+
+.card__quote {
+  font-size: 15px;
+  opacity: 75%;
+}
+
+.card--bg-purple {
+  background-color: #6b46c1;
+  grid-column: 1 / span 2;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top 15px right 50px;
+}
+
+.card--bg-purple img,
+.card--bg-black-blue img {
+  border: 2px solid #996ed9;
+}
+
+.card .card__lead {
+  margin-bottom: 20px;
+}
+
+.card--bg-purple .card__lead {
+  line-height: 1.4;
+}
+
+.card--bg-gray-blue {
+  background: hsl(217, 19%, 35%);
+  color: #fff;
+}
+
+.card--bg-black-blue {
+  background: hsl(219, 29%, 14%);
+  color: #fff;
+  grid-column: 1 / span 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.card--bg-white-gray {
+  background: #fff;
+  color: hsl(219, 29%, 14%);
+}
+
+#kira {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+#jeanette {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+footer {
+  text-align: right;
+  padding: 20px;
+}
+
+a {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  #testimonial {
+    display: block;
+  }
+
+  .card {
+    margin: 35px 0;
+  }
+}
